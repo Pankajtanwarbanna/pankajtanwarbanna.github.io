@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Possible ways to iterate a string in JavaScript">
+    <meta name="keywords" content="Possible ways to iterate a string in JavaScript, javascript, strings">
+
+    <link rel="icon" type="image/x-icon" href="https://pankajtanwarbanna.github.io/assets/favicon.png" />
+
+    <title>Possible ways to iterate a string in JavaScript | Pankaj Tanwar</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,300,800,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://pankajtanwarbanna.github.io/assets/css/home.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TQ2EMH9FM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-9TQ2EMH9FM');
+    </script>
+</head>
+
+<body class="theme-default">
+<div class="wrapper">
+    <header class="page-header">
+        <h1 class="header-name">Possible ways to iterate a string in JavaScript</h1>
+        <div class="header-contact-info">
+            <p>Sunday, December 20, 2020 • Tech</p>
+        </div>
+    </header>
+    <!-- begin About Me -->
+    <section class="content-section">
+
+        <div class="resume-item"  itemprop="worksFor">
+            <p class="resume-item-copy">
+
+                First, we need to understand the basic ways to get the char at particular index in the string. there are two ways basically.
+                <br><br>
+                <b> 1. str.chatAt(index) </b>
+                <ul class="resume-item-list">
+                    <li>charAt() method returns a new string, at particular given index.</li>
+                    <li>Supported in Old browsers (IE7 too)</li>
+                    <li>If no index passed, takes index, by default 0</li>
+                    <li>If out of range index, returns empty string</li>
+                </ul>
+
+                <b> 2. Bracket Notation (str[index]) </b>
+                <ul class="resume-item-list">
+                    <li>Bracket method returns char at particular given index.</li>
+                    <li> It was introduced in ECMAScript 2015 but breaks in old browsers </li>
+                    <li>If no index passed, throws syntax error</li>
+                    <li>If out of range index, returns undefined</li>
+                </ul>
+
+                <br>
+            <b>Iterating over the string -</b><br>
+                <br><b> 1. For Loop </b>
+                <em>
+                    <br>
+                    const str = "pankaj";
+                    <br>
+                    for (let index = 0; index < str.length; index ++) {
+                    <br>
+                    console.log(str[index]) // str.charAt(index)
+                    <br>
+                    }
+                </em>
+            <br><b> 2. for..of </b>
+            <em>
+                <br>
+                const str = "pankaj";
+                <br>
+                for (let c of str ) {
+                <br>
+                console.log(c);
+                <br>
+                }
+            </em>
+            <br><b> 3. forEach() </b>
+            <em>
+                <br>
+                const str = "pankaj";
+                <br>
+                [...str].forEach( (c) => console.log(c) );
+                <br>
+            </em>
+
+
+                <br><b> BONUS : </b>
+            <br>
+            Downside of bracket notation is that, it cant be used to assign a character
+            <br>
+            <br>
+            let str = "pankaj"
+            <br>str[0] = "t"
+            <br>console.log(str) // "pankaj"
+
+            </p>
+            <ul class="resume-item-list" style="list-style: none;text-align: center">
+                <li><a href="/" itemprop="url">Go back</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- end About Me -->
+    <footer class="page-footer">
+        &copy Pankaj Tanwar 2020
+    </footer>
+</div>
+</body>
+
+</html>
