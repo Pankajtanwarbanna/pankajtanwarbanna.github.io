@@ -179,7 +179,7 @@ main {
 }
 
 .headshot {
-    width: 80%;
+    width: 70%;
     flex-shrink: 0;
     margin: 20px;
     border: calc(8px + 0.2vw) solid transparent;
@@ -302,6 +302,10 @@ main {
     border-radius: 5px;
     margin-top: 25px;
     box-shadow: 0 10px 30px -15px #212121;
+}
+
+.round {
+    border-radius: 20px;
 }
 
 .project-info-card-left {
