@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: pankajtanwar.in
+Token: 4b2051d22eab3fe514d9c1ad1a3bb8e795ed6a2b0f4caf60fed3e14c0b068eea
